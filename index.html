@@ -17,7 +17,6 @@
       <div id="navbar-links" class="collapse navbar-collapse bg-light">
         <ul class="navbar-nav  ml-md-auto d-md-flex">
             <li class="nav-item"><a class="nav-link" href="home">Home </a></li>
-            <li class="nav-item"><a class="nav-link" href="events">Events </a></li>
             <li class="nav-item"><a class="nav-link" href="team">Team </a></li>
             <li class="nav-item"><a class="nav-link" href="contactus">About</a></li>
             <li class="nav-item"><a class="nav-link" href="ask">FAQs </a></li>
@@ -31,7 +30,7 @@
         <p>Hello EVERYONE!</p>
     </div>
       
-<div class="container">
+<div class="container-fluid">
   <div class="row" style="justify-content:center">
     <div class="col-sm-6 col-lg-3 mb-3 temp">
       <div class="card mb-3 h-100">
@@ -118,6 +117,10 @@
 </body>
 </html>
 <style>
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
   .navbar {
     position: fixed;
   }
@@ -125,7 +128,7 @@
     font-size: 1.2rem;
     text-transform: uppercase;
   }
-  a:hover {
+  li a:hover {
     display: block;
     background-color: #ddd;
     padding: 10%;
@@ -182,7 +185,7 @@
   .navbar {
     position: fixed;
   }
-  a:hover {
+  li a:hover {
     padding: 1.2rem;
   }
   .temp {
