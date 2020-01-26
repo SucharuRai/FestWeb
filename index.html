@@ -29,6 +29,9 @@
       </div>
     </nav>
   </div> -->
+  <div class="logo" style="position: relative; top: 0px;">
+   <a href="home.html"> <img src="./coin.png" alt="logo"/></a>
+  </div>
   <div class="el">
     <div class="container-fluid">
       <div class="row" style="justify-content:center">
@@ -294,7 +297,7 @@
         <!--w3-animate-top only here... modal-content class made it common -->
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
-            <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">&times;</span>
         </div>
         <div class="modal-body">
           <div class="container-fluid">
@@ -302,7 +305,7 @@
               <div class="col-sm-6 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                      <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
                     <b>
                       SomeEdit1
                     </b>
@@ -312,7 +315,7 @@
               <div class="col-sm-6 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                      <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
                     <b>
                       SomeEdit2
                     </b>
@@ -322,7 +325,7 @@
               <div class="col-sm-6 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                      <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
                     <b>
                       SomeEdit3
                     </b>
@@ -332,7 +335,7 @@
               <div class="col-sm-6 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                      <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
                     <b>
                       SomeEdit4
                     </b>
@@ -342,7 +345,7 @@
               <div class="col-sm-6 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                      <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
                     <b>
                       SomeEdit5
                     </b>
@@ -352,7 +355,7 @@
               <div class="col-sm-6 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                      <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
                     <b>
                       SomeEdit6
                     </b>
@@ -362,7 +365,7 @@
               <div class="col-sm-6 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                      <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
                     <b>
                       SomeEdit7
                     </b>
@@ -372,7 +375,7 @@
               <div class="col-sm-6 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                      <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
                     <b>
                       SomeEdit8
                     </b>
@@ -401,6 +404,7 @@
     border: transparent !important;
     border-radius: 0.45rem !important;
   }
+
   .el .img-thumbnail {
     max-width: 80% !important;
   }
@@ -414,9 +418,9 @@
     overflow: hidden;
   }
 
-  .el .container-fluid {
+  /* .el .container-fluid {
     margin-top: 10%;
-  }
+  } */
 
   /* .navbar {
     position: fixed;
@@ -534,6 +538,11 @@
     overflow-y: hidden !important;
   }
 
+  .logo img{
+    width:300px;
+    height:150px;
+  }
+
   @media only screen and (max-width: 1150px) {
     .modal-dialog {
       max-width: 600px !important;
@@ -558,20 +567,24 @@
       max-width: 500px !important;
     }
 
-    .el .container-fluid {
+    /* .el .container-fluid {
       margin-top: 15% !important;
-    }
+    } */
   }
 
   @media only screen and (max-width: 567px) {
-    .el .container-fluid {
+    /* .el .container-fluid {
       margin-top: 20% !important;
-    }
+    } */
+    .logo img{
+    width:200px!important;
+    height:100px!important;
+  }
   }
 
   @media only screen and (max-width: 400px) {
-    .el .container-fluid {
+    /* .el .container-fluid {
       margin-top: 25% !important;
-    }
+    } */
   }
 </style>
