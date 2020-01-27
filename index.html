@@ -293,11 +293,13 @@
   <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content w3-animate-top">
+      <div class="modal-content bg-transparent w3-animate-top">
         <!--w3-animate-top only here... modal-content class made it common -->
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
-          <span aria-hidden="true">&times;</span>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="color: teal;">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
           <div class="container-fluid">
@@ -386,7 +388,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: teal;">Close</button>
         </div>
       </div>
     </div>
@@ -398,14 +400,14 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-image: url("./bg1.png");
-    background-position: center center!important;
-    background-repeat: no-repeat!important;
-    background-attachment: fixed!important;
-    background-size: cover!important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     /* width: 100vw; */
     /* height: inherit; */
     /* margin-right: 200px; */
-    background-color: #031a09!important;
+    background-color: #031a09;
   }
 
   .img-thumbnail {
@@ -547,6 +549,14 @@
     overflow-y: hidden !important;
   }
 
+  .modal .modal-header {
+    color:tomato;
+    text-transform: uppercase;
+  }
+  .modal-body .card{
+    background-color: transparent;
+  }
+
   .card-body b {
     color: lightskyblue;
     text-transform: uppercase;
@@ -557,6 +567,11 @@
     height: 7rem;
     margin-left: 1.5rem;
   }
+
+  .modal-backdrop
+{
+    opacity:0.9 !important;
+}
 
   @media only screen and (max-width: 1150px) {
     .modal-dialog {
@@ -580,7 +595,12 @@
     } */
 
     body {
-      background-image: url(./bg1.jpg)!important;
+      background-image: url(./bg1.jpg) !important;
+      background-position: inherit;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
     }
 
     .el .temp {
