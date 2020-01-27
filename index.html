@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>TeamPage</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -304,80 +304,80 @@
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row" style="justify-content:center">
-              <div class="col-sm-6 col-lg-3 mb-3 temp">
+              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img mx-auto d-block" />
                     <b>
                       SomeEdit1
                     </b>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 mb-3 temp">
+              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img mx-auto d-block" />
                     <b>
                       SomeEdit2
                     </b>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 mb-3 temp">
+              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img mx-auto d-block" />
                     <b>
                       SomeEdit3
                     </b>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 mb-3 temp">
+              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img mx-auto d-block" />
                     <b>
                       SomeEdit4
                     </b>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 mb-3 temp">
+              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img mx-auto d-block" />
                     <b>
                       SomeEdit5
                     </b>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 mb-3 temp">
+              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img mx-auto d-block" />
                     <b>
                       SomeEdit6
                     </b>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 mb-3 temp">
+              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img mx-auto d-block" />
                     <b>
                       SomeEdit7
                     </b>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 mb-3 temp">
+              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
-                    <img src="./linux.jpg" class="img-thumbnail mx-auto d-block" />
+                    <img src="./linux.jpg" class="img mx-auto d-block" />
                     <b>
                       SomeEdit8
                     </b>
@@ -388,7 +388,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: teal;">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -550,16 +550,34 @@
   }
 
   .modal .modal-header {
-    color:tomato;
+    color: tomato;
     text-transform: uppercase;
   }
-  .modal-body .card{
+
+  .modal-body .card {
     background-color: transparent;
   }
 
-  .card-body b {
+  .el .card-body b {
     color: lightskyblue;
     text-transform: uppercase;
+  }
+  .card-body b {
+    color: lightskyblue;
+  }
+
+  .card-body .img {
+    z-index: 1;
+    height: 7rem;
+    width: 8rem;
+    background-size: cover;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .card-body .img:hover {
+    box-shadow: 0 10px 20px rgba(216, 211, 211, 0.397), 0 6px 6px rgba(209, 204, 204, 0.363);
   }
 
   .logo img {
@@ -568,10 +586,15 @@
     margin-left: 1.5rem;
   }
 
-  .modal-backdrop
-{
-    opacity:0.9 !important;
-}
+  .modal-footer .btn{
+    background-color: teal!important;
+  }
+  .modal-footer .btn:hover{
+    background-color: rgb(5, 68, 68)!important;
+  }
+  .modal-backdrop {
+    opacity: 0.9 !important;
+  }
 
   @media only screen and (max-width: 1150px) {
     .modal-dialog {
@@ -654,4 +677,5 @@
       font-size: 0.8rem;
     }
   }
+  
 </style>
