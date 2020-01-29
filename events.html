@@ -59,12 +59,12 @@
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-4 md-6 sm-6 text-center">
+            <div class="col-4 mx-auto md-6 sm-6 text-center">
               <img class="img-fluid z-depth-1-half rounded-circle" src="static/nightdragon.jpg" alt="IMG">
               <div style="height:10px"></div>
               <p class="title mb-0">Event Name</p>
             </div>
-              <div class="col-8 md-6 sm-6">
+              <div class="col-8 mx-auto md-6 sm-6">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -78,8 +78,9 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-warning waves-effect waves-light" type="button" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-outline-warning waves-effect" type="button">Save changes</button>
+          <button type="button" class="btn waves-effect waves-light" type="button" data-dismiss="modal" style="
+          background-color: #25D399;  border-width: 0.1rem;">Close</button>
+          <button type="button" class="btn waves-effect" type="button" style="border-color: #25D399; border-width: 0.1rem;">Save changes</button>
         </div>
       </div>
     </div>
@@ -131,10 +132,15 @@
   }
 
   .modal-header {
-    background-color: #fb3;
+    background-color: rgb(37, 211, 153);
+  }
+  .modal-body {
+    background-color: rgb(225, 240, 245);
   }
   .modal-footer{
     justify-content: center;
+    background-color: rgb(225, 240, 245);
+    border-color: black;
   }
   .z-depth-1-half {
     box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15) !important;
@@ -179,8 +185,39 @@
 
     .swiper-container {
       transform: translateY(45%) !important;
+    }    
+  }
+
+  @media only screen and (max-width: 650px) {
+    .row{
+      display: contents;
+    }
+    .row .col-4 {
+      max-width: 80%!important;
+    }
+    .row .col-8{
+      max-width: 90%;
     }
   }
+  @media only screen and (max-width: 450px) {
+    .swiper-slide {
+      width: 300px;
+      height: 300px;
+    }
+    .row .col-4 {
+      max-width: 90%!important;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .swiper-slide {
+      width: 250px;
+      height: 250px;
+    }
+    .swiper-container {
+      transform: translateY(55%) !important;
+    } 
+  }
+
 </style>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
