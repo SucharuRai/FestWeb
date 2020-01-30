@@ -30,7 +30,7 @@
       </div>
     </nav>
   </div> -->
-  <canvas id="canvas"></canvas>
+  <!-- <canvas id="canvas"></canvas> -->
   <div class="logo" style="position: relative; top: 0px;">
     <a href="home.html"> <img src="static/coin.png" alt="logo" /></a>
   </div>
@@ -296,17 +296,17 @@
   <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content bg-transparent w3-animate-top">
+      <div class="modal-content bg-transparent w3-animate-bottom">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true" style="color: teal;">&times;</span>
+            <span id="start-btn" aria-hidden="true" style="color: teal;">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row" style="justify-content:center">
-              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
+              <div class="col-auto col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
                     <img src="static/linux.jpg" class="img mx-auto d-block" />
@@ -316,7 +316,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
+              <div class="col-auto col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
                     <img src="static/linux.jpg" class="img mx-auto d-block" />
@@ -326,7 +326,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
+              <div class="col-auto col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
                     <img src="static/linux.jpg" class="img mx-auto d-block" />
@@ -336,7 +336,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
+              <div class="col-auto col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
                     <img src="static/linux.jpg" class="img mx-auto d-block" />
@@ -346,7 +346,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
+              <div class="col-auto col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
                     <img src="static/linux.jpg" class="img mx-auto d-block" />
@@ -356,7 +356,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
+              <div class="col-auto col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
                     <img src="static/linux.jpg" class="img mx-auto d-block" />
@@ -366,7 +366,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
+              <div class="col-auto col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
                     <img src="static/linux.jpg" class="img mx-auto d-block" />
@@ -376,7 +376,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-auto col-sm-4 col-lg-3 mb-3 temp">
+              <div class="col-auto col-lg-3 mb-3 temp">
                 <div class="card mb-3 h-100">
                   <div class="card-body">
                     <img src="static/linux.jpg" class="img mx-auto d-block" />
@@ -397,14 +397,14 @@
 </html>
 <style>
   body {
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-image: url("static/bg1.png");
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+    background-image: url("static/Website BG.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #031a09; */
-    background: rgb(60, 69, 81);
+    background-color: #031a09;
+    /* background: rgb(60, 69, 81); */
     /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
     font-size: 14px;
     color: #000;
@@ -415,13 +415,13 @@
 		/* cursor: none; */
   }
 
-  #canvas{
+  /* #canvas{
 		background-color: #2c343f;
 		width: 100vw;
 		height: 100vh;		
     position: fixed;
     z-index: -100;
-}
+} */
   .img-thumbnail {
     background-color: transparent;
     border: transparent !important;
@@ -536,7 +536,7 @@
   }
 
   .modal-dialog {
-    max-width: 800px !important;
+    max-width: 100% !important;
   }
 
   .modal-content {
@@ -569,8 +569,8 @@
 
   .card-body .img {
     z-index: 1;
-    height: 7rem;
-    width: 8rem;
+    height: 11rem;
+    width: 12rem;
     background-size: cover;
     transition: .4s ease-in-out;
     cursor: pointer;
@@ -593,10 +593,10 @@
   }
 
   @media only screen and (max-width: 1150px) {
-    .modal-dialog {
+    /* .modal-dialog {
       max-width: 600px !important;
-    }
-  }
+    }*/
+  } 
 
   .logo img {
     width: 8rem;
@@ -614,22 +614,21 @@
     } */
 
     body {
-      background-image: url(static/bg1.jpg) !important;
+      background-image: url("static/Website BG Mobile.png") !important;
       background-position: inherit;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
-
     }
 
     .el .temp {
-      min-width: 26rem !important;
-      max-width: 26rem !important;
+      min-width: 22rem !important;
+      max-width: 22rem !important;
     }
 
-    .modal-dialog {
+    /* .modal-dialog {
       max-width: 500px !important;
-    }
+    } */
 
     /* .el .container-fluid {
       margin-top: 15% !important;
@@ -675,6 +674,8 @@
   }
 </style>
 </style>
+<!-- <script src="./html2canvas.min.js"></script>
+<script src="http://chancejs.com/chance.min.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -684,174 +685,271 @@
 <script src=" https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js"></script>
 <script>
-  var c = document.getElementById("canvas");
-var ctx = c.getContext("2d");
+//   var c = document.getElementById("canvas");
+// var ctx = c.getContext("2d");
 
-function resize() {
-    var box = c.getBoundingClientRect();
-    c.width = box.width;
-    c.height = box.height;
-}
+// function resize() {
+//     var box = c.getBoundingClientRect();
+//     c.width = box.width;
+//     c.height = box.height;
+// }
 
-var light = {
-    x: 160,
-    y: 200
-}
+// var light = {
+//     x: 160,
+//     y: 200
+// }
 
-var colors = ["#f5c156", "#e6616b", "#5cd3ad"];
+// var colors = ["#f5c156", "#e6616b", "#5cd3ad"];
 
-function drawLight() {
-    ctx.beginPath();
-    ctx.arc(light.x, light.y, 1000, 0, 2 * Math.PI);
-    var gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 1000);
-    gradient.addColorStop(0, "#3b4654");
-    gradient.addColorStop(1, "#2c343f");
-    ctx.fillStyle = gradient;
-    ctx.fill();
+// function drawLight() {
+//     ctx.beginPath();
+//     ctx.arc(light.x, light.y, 1000, 0, 2 * Math.PI);
+//     var gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 1000);
+//     gradient.addColorStop(0, "#3b4654");
+//     gradient.addColorStop(1, "#2c343f");
+//     ctx.fillStyle = gradient;
+//     ctx.fill();
 
-    ctx.beginPath();
-    ctx.arc(light.x, light.y, 20, 0, 2 * Math.PI);
-    gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 5);
-    gradient.addColorStop(0, "#fff");
-    gradient.addColorStop(1, "#3b4654");
-    ctx.fillStyle = gradient;
-    ctx.fill();
-}
+//     ctx.beginPath();
+//     ctx.arc(light.x, light.y, 20, 0, 2 * Math.PI);
+//     gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 5);
+//     gradient.addColorStop(0, "#fff");
+//     gradient.addColorStop(1, "#3b4654");
+//     ctx.fillStyle = gradient;
+//     ctx.fill();
+// }
 
-function Box() {
-    this.half_size = Math.floor((Math.random() * 50) + 1);
-    this.x = Math.floor((Math.random() * c.width) + 1);
-    this.y = Math.floor((Math.random() * c.height) + 1);
-    this.r = Math.random() * Math.PI;
-    this.shadow_length = 2000;
-    this.color = colors[Math.floor((Math.random() * colors.length))];
+// function Box() {
+//     this.half_size = Math.floor((Math.random() * 50) + 1);
+//     this.x = Math.floor((Math.random() * c.width) + 1);
+//     this.y = Math.floor((Math.random() * c.height) + 1);
+//     this.r = Math.random() * Math.PI;
+//     this.shadow_length = 2000;
+//     this.color = colors[Math.floor((Math.random() * colors.length))];
   
-    this.getDots = function() {
+//     this.getDots = function() {
 
-        var full = (Math.PI * 2) / 4;
-
-
-        var p1 = {
-            x: this.x + this.half_size * Math.sin(this.r),
-            y: this.y + this.half_size * Math.cos(this.r)
-        };
-        var p2 = {
-            x: this.x + this.half_size * Math.sin(this.r + full),
-            y: this.y + this.half_size * Math.cos(this.r + full)
-        };
-        var p3 = {
-            x: this.x + this.half_size * Math.sin(this.r + full * 2),
-            y: this.y + this.half_size * Math.cos(this.r + full * 2)
-        };
-        var p4 = {
-            x: this.x + this.half_size * Math.sin(this.r + full * 3),
-            y: this.y + this.half_size * Math.cos(this.r + full * 3)
-        };
-
-        return {
-            p1: p1,
-            p2: p2,
-            p3: p3,
-            p4: p4
-        };
-    }
-    this.rotate = function() {
-        var speed = (60 - this.half_size) / 20;
-        this.r += speed * 0.002;
-        this.x += speed;
-        this.y += speed;
-    }
-    this.draw = function() {
-        var dots = this.getDots();
-        ctx.beginPath();
-        ctx.moveTo(dots.p1.x, dots.p1.y);
-        ctx.lineTo(dots.p2.x, dots.p2.y);
-        ctx.lineTo(dots.p3.x, dots.p3.y);
-        ctx.lineTo(dots.p4.x, dots.p4.y);
-        ctx.fillStyle = this.color;
-        ctx.fill();
+//         var full = (Math.PI * 2) / 4;
 
 
-        if (this.y - this.half_size > c.height) {
-            this.y -= c.height + 100;
-        }
-        if (this.x - this.half_size > c.width) {
-            this.x -= c.width + 100;
-        }
-    }
-    this.drawShadow = function() {
-        var dots = this.getDots();
-        var angles = [];
-        var points = [];
+//         var p1 = {
+//             x: this.x + this.half_size * Math.sin(this.r),
+//             y: this.y + this.half_size * Math.cos(this.r)
+//         };
+//         var p2 = {
+//             x: this.x + this.half_size * Math.sin(this.r + full),
+//             y: this.y + this.half_size * Math.cos(this.r + full)
+//         };
+//         var p3 = {
+//             x: this.x + this.half_size * Math.sin(this.r + full * 2),
+//             y: this.y + this.half_size * Math.cos(this.r + full * 2)
+//         };
+//         var p4 = {
+//             x: this.x + this.half_size * Math.sin(this.r + full * 3),
+//             y: this.y + this.half_size * Math.cos(this.r + full * 3)
+//         };
 
-        for (dot in dots) {
-            var angle = Math.atan2(light.y - dots[dot].y, light.x - dots[dot].x);
-            var endX = dots[dot].x + this.shadow_length * Math.sin(-angle - Math.PI / 2);
-            var endY = dots[dot].y + this.shadow_length * Math.cos(-angle - Math.PI / 2);
-            angles.push(angle);
-            points.push({
-                endX: endX,
-                endY: endY,
-                startX: dots[dot].x,
-                startY: dots[dot].y
-            });
-        };
-
-        for (var i = points.length - 1; i >= 0; i--) {
-            var n = i == 3 ? 0 : i + 1;
-            ctx.beginPath();
-            ctx.moveTo(points[i].startX, points[i].startY);
-            ctx.lineTo(points[n].startX, points[n].startY);
-            ctx.lineTo(points[n].endX, points[n].endY);
-            ctx.lineTo(points[i].endX, points[i].endY);
-            ctx.fillStyle = "#2c343f";
-            ctx.fill();
-        };
-    }
-}
-
-var boxes = [];
-
-function draw() {
-    ctx.clearRect(0, 0, c.width, c.height);
-    drawLight();
-
-    for (var i = 0; i < boxes.length; i++) {
-        boxes[i].rotate();
-        boxes[i].drawShadow();
-    };
-    for (var i = 0; i < boxes.length; i++) {
-        collisionDetection(i)
-        boxes[i].draw();
-    };
-    requestAnimationFrame(draw);
-}
-
-resize();
-draw();
-
-while (boxes.length < 14) {
-    boxes.push(new Box());
-}
-
-window.onresize = resize;
-c.onmousemove = function(e) {
-    light.x = e.offsetX == undefined ? e.layerX : e.offsetX;
-    light.y = e.offsetY == undefined ? e.layerY : e.offsetY;
-}
+//         return {
+//             p1: p1,
+//             p2: p2,
+//             p3: p3,
+//             p4: p4
+//         };
+//     }
+//     this.rotate = function() {
+//         var speed = (60 - this.half_size) / 20;
+//         this.r += speed * 0.002;
+//         this.x += speed;
+//         this.y += speed;
+//     }
+//     this.draw = function() {
+//         var dots = this.getDots();
+//         ctx.beginPath();
+//         ctx.moveTo(dots.p1.x, dots.p1.y);
+//         ctx.lineTo(dots.p2.x, dots.p2.y);
+//         ctx.lineTo(dots.p3.x, dots.p3.y);
+//         ctx.lineTo(dots.p4.x, dots.p4.y);
+//         ctx.fillStyle = this.color;
+//         ctx.fill();
 
 
-function collisionDetection(b){
-	for (var i = boxes.length - 1; i >= 0; i--) {
-		if(i != b){	
-			var dx = (boxes[b].x + boxes[b].half_size) - (boxes[i].x + boxes[i].half_size);
-			var dy = (boxes[b].y + boxes[b].half_size) - (boxes[i].y + boxes[i].half_size);
-			var d = Math.sqrt(dx * dx + dy * dy);
-			if (d < boxes[b].half_size + boxes[i].half_size) {
-			    boxes[b].half_size = boxes[b].half_size > 1 ? boxes[b].half_size-=1 : 1;
-			    boxes[i].half_size = boxes[i].half_size > 1 ? boxes[i].half_size-=1 : 1;
-			}
-		}
-	}
-}
+//         if (this.y - this.half_size > c.height) {
+//             this.y -= c.height + 100;
+//         }
+//         if (this.x - this.half_size > c.width) {
+//             this.x -= c.width + 100;
+//         }
+//     }
+//     this.drawShadow = function() {
+//         var dots = this.getDots();
+//         var angles = [];
+//         var points = [];
+
+//         for (dot in dots) {
+//             var angle = Math.atan2(light.y - dots[dot].y, light.x - dots[dot].x);
+//             var endX = dots[dot].x + this.shadow_length * Math.sin(-angle - Math.PI / 2);
+//             var endY = dots[dot].y + this.shadow_length * Math.cos(-angle - Math.PI / 2);
+//             angles.push(angle);
+//             points.push({
+//                 endX: endX,
+//                 endY: endY,
+//                 startX: dots[dot].x,
+//                 startY: dots[dot].y
+//             });
+//         };
+
+//         for (var i = points.length - 1; i >= 0; i--) {
+//             var n = i == 3 ? 0 : i + 1;
+//             ctx.beginPath();
+//             ctx.moveTo(points[i].startX, points[i].startY);
+//             ctx.lineTo(points[n].startX, points[n].startY);
+//             ctx.lineTo(points[n].endX, points[n].endY);
+//             ctx.lineTo(points[i].endX, points[i].endY);
+//             ctx.fillStyle = "#2c343f";
+//             ctx.fill();
+//         };
+//     }
+// }
+
+// var boxes = [];
+
+// function draw() {
+//     ctx.clearRect(0, 0, c.width, c.height);
+//     drawLight();
+
+//     for (var i = 0; i < boxes.length; i++) {
+//         boxes[i].rotate();
+//         boxes[i].drawShadow();
+//     };
+//     for (var i = 0; i < boxes.length; i++) {
+//         collisionDetection(i)
+//         boxes[i].draw();
+//     };
+//     requestAnimationFrame(draw);
+// }
+
+// resize();
+// draw();
+
+// while (boxes.length < 14) {
+//     boxes.push(new Box());
+// }
+
+// window.onresize = resize;
+// c.onmousemove = function(e) {
+//     light.x = e.offsetX == undefined ? e.layerX : e.offsetX;
+//     light.y = e.offsetY == undefined ? e.layerY : e.offsetY;
+// }
+
+
+// function collisionDetection(b){
+// 	for (var i = boxes.length - 1; i >= 0; i--) {
+// 		if(i != b){	
+// 			var dx = (boxes[b].x + boxes[b].half_size) - (boxes[i].x + boxes[i].half_size);
+// 			var dy = (boxes[b].y + boxes[b].half_size) - (boxes[i].y + boxes[i].half_size);
+// 			var d = Math.sqrt(dx * dx + dy * dy);
+// 			if (d < boxes[b].half_size + boxes[i].half_size) {
+// 			    boxes[b].half_size = boxes[b].half_size > 1 ? boxes[b].half_size-=1 : 1;
+// 			    boxes[i].half_size = boxes[i].half_size > 1 ? boxes[i].half_size-=1 : 1;
+// 			}
+// 		}
+// 	}
+// }
+    // Starting of SNAP! 
+// var imageDataArray = [];
+//     var canvasCount = 35;
+//     $("#start-btn").click(function(){
+      
+//       html2canvas($(".modal-content")[0]).then(canvas => {
+//         //capture all div data as image
+//         ctx = canvas.getContext("2d");
+//         var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+//         var pixelArr = imageData.data;
+//         createBlankImageData(imageData);
+//         //put pixel info to imageDataArray (Weighted Distributed)
+//         for (let i = 0; i < pixelArr.length; i+=4) {
+//           //find the highest probability canvas the pixel should be in
+//           let p = Math.floor((i/pixelArr.length) *canvasCount);
+//           let a = imageDataArray[weightedRandomDistrib(p)];
+//           a[i] = pixelArr[i];
+//           a[i+1] = pixelArr[i+1];
+//           a[i+2] = pixelArr[i+2];
+//           a[i+3] = pixelArr[i+3]; 
+//         }
+//         //create canvas for each imageData and append to target element
+//         for (let i = 0; i < canvasCount; i++) {
+//           let c = newCanvasFromImageData(imageDataArray[i], canvas.width, canvas.height);
+//           c.classList.add("dust");
+//           $("body").append(c);
+//         }
+//         //clear all children except the canvas
+//         $(".modal-content").children().not(".dust").fadeOut(3500);
+//         //apply animation
+//         $(".dust").each( function(index){
+//           animateBlur($(this),0.8,800);
+//           setTimeout(() => {
+//             animateTransform($(this),100,-100,chance.integer({ min: -15, max: 15 }),800+(110*index));
+//           }, 70*index); 
+//           //remove the canvas from DOM tree when faded
+//           $(this).delay(70*index).fadeOut((110*index)+800,"easeInQuint",()=> {$( this ).remove();});
+//         });
+//       });
+//     });
+//     function weightedRandomDistrib(peak) {
+//       var prob = [], seq = [];
+//       for(let i=0;i<canvasCount;i++) {
+//         prob.push(Math.pow(canvasCount-Math.abs(peak-i),3));
+//         seq.push(i);
+//       }
+//       return chance.weighted(seq, prob);
+//     }
+//     function animateBlur(elem,radius,duration) {
+//       var r =0;
+//       $({rad:0}).animate({rad:radius}, {
+//           duration: duration,
+//           easing: "easeOutQuad",
+//           step: function(now) {
+//             elem.css({
+//                   filter: 'blur(' + now + 'px)'
+//               });
+//           }
+//       });
+//     }
+//     function animateTransform(elem,sx,sy,angle,duration) {
+//       var td = tx = ty =0;
+//       $({x: 0, y:0, deg:0}).animate({x: sx, y:sy, deg:angle}, {
+//           duration: duration,
+//           easing: "easeInQuad",
+//           step: function(now, fx) {
+//             if (fx.prop == "x") 
+//               tx = now;
+//             else if (fx.prop == "y") 
+//               ty = now;
+//             else if (fx.prop == "deg") 
+//               td = now;
+//             elem.css({
+//                   transform: 'rotate(' + td + 'deg)' + 'translate(' + tx + 'px,'+ ty +'px)'
+//               });
+//           }
+//       });
+//     }
+//     function createBlankImageData(imageData) {
+//       for(let i=0;i<canvasCount;i++)
+//       {
+//         let arr = new Uint8ClampedArray(imageData.data);
+//         for (let j = 0; j < arr.length; j++) {
+//             arr[j] = 0;
+//         }
+//         imageDataArray.push(arr);
+//       }
+//     }
+//     function newCanvasFromImageData(imageDataArray ,w , h) {
+//       var canvas = document.createElement('canvas');
+//           canvas.width = w;
+//           canvas.height = h;
+//           tempCtx = canvas.getContext("2d");
+//           tempCtx.putImageData(new ImageData(imageDataArray, w , h), 0, 0);
+          
+//       return canvas;
+//     }
 </script>
