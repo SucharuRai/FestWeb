@@ -18,11 +18,14 @@ body {
 
   #arhn_header {
     position: absolute;
-    left: 5rem;
+    left: 2rem;
     top: 2rem;
     z-index: 100;
     display: block;
     cursor: pointer;
+}
+#arhn_header img {
+  width: 100px;
 }
 
   .swiper-container {
@@ -62,7 +65,7 @@ body {
   .modal-body {
     background-color: rgb(225, 240, 245);
     font-size: 1.5rem;
-    font-family: 'Comfortaa', cursive;
+    font-family: "Catamaran", sans-serif;
   }
   .modal-body .title{
     font-size: 1.8rem;
