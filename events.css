@@ -16,6 +16,15 @@ body {
     cursor: none;
   }
 
+  #arhn_header {
+    position: absolute;
+    left: 5rem;
+    top: 2rem;
+    z-index: 100;
+    display: block;
+    cursor: pointer;
+}
+
   .swiper-container {
     position: absolute!important;
     z-index: 10;
